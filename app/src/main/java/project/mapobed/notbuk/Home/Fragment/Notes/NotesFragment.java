@@ -50,6 +50,6 @@ public class NotesFragment extends Fragment implements NotesAdapter.NoteClicked 
 
     @Override
     public void name_of_pos(int pos) {
-        startActivity(new Intent(getActivity(), NotesDetailsActivity.class));
+        startActivity(new Intent(getActivity(), NotesDetailsActivity.class).putExtra("noteTitle",title.get(pos)).putExtra("noteContent",content.get(pos)));
     }
 }

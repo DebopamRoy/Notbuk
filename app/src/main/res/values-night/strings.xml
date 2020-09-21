@@ -15,7 +15,6 @@
     <string name="email_address">Email address</string>
     <string name="name">Name</string>
     <string name="facebook_app_id">316591709643154</string>
-    <string name="fb_login_protocol_scheme">fb316591709643154</string>
     <string name="social_media_option">Or Login using social media</string>
     <string name="name_empty_error">Name cannot be empty.</string>
     <string name="email_empty_error">Email address is wrong.</string>
@@ -51,4 +50,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="welcome">Welcome</string>
     <string name="sign_in">Sign In</string>
+    <string name="logout">Logout</string>
+    <string name="delete">Delete</string>
+    <string name="upload">Upload</string>
+    <string name="rename">Rename</string>
+    <string name="edit">Edit</string>
 </resources>
