@@ -20,7 +20,7 @@ public class NotesDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notes_details);
-        back = findViewById(R.id.back_button);
+        back = findViewById(R.id.back_button_details);
         title = findViewById(R.id.title_button);
         content = findViewById(R.id.content_button);
         content.setMovementMethod(new ScrollingMovementMethod());
@@ -34,5 +34,10 @@ public class NotesDetailsActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        finish();
     }
 }

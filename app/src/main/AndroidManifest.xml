@@ -12,7 +12,8 @@
         android:roundIcon="@drawable/ic_launcher_foreground"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Home.Fragment.Notes.NoteDetails.NotesDetailsActivity"></activity>
+        <activity android:name=".Home.Fragment.HelpMe.HelpMeActivity"></activity>
+        <activity android:name=".Home.Fragment.Notes.NoteDetails.NotesDetailsActivity" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"

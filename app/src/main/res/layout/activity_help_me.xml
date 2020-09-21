@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/co_pay"
+    android:layout_height="match_parent"
+    tools:context=".Home.Fragment.HelpMe.HelpMeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardColor"
+        android:elevation="10dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back_button_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title_button_help"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/exo_medium"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/help_me"
+                android:textColor="@color/secondColor"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/card_image"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/ic_credit" />
+
+    <TextView
+        android:id="@+id/payment_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/exo_medium"
+        android:padding="20dp"
+        android:text="@string/we_are_always_in_need_of_money_can_you_help_me_with_some"
+        android:textColor="@color/secondColor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/card_image"
+        app:layout_constraintEnd_toStartOf="@+id/card_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/amount_paid"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        app:boxStrokeColor="@color/secondColor"
+        app:errorTextColor="@color/errorColor"
+        app:hintTextColor="@color/secondColor"
+
+        app:layout_constraintBottom_toTopOf="@+id/pay_me_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_image">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:drawablePadding="10dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_rupee"
+            android:hint="@string/enter_the_amount"
+            android:inputType="number"
+            android:textColor="@color/secondColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/pay_me_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/get_started_background"
+        android:fontFamily="@font/exo_medium"
+        android:padding="10dp"
+        android:text="@string/donate"
+        android:textAllCaps="false"
+        android:textColor="@color/secondColor"
+        app:layout_constraintBottom_toTopOf="@+id/security_pay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount_paid" />
+
+    <ImageButton
+        android:id="@+id/security_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/security_text"
+        app:layout_constraintEnd_toEndOf="@+id/pay_me_button"
+        app:layout_constraintStart_toStartOf="@+id/pay_me_button"
+        app:layout_constraintTop_toBottomOf="@+id/pay_me_button"
+        app:srcCompat="@drawable/ic_outline_info_24" />
+
+    <TextView
+        android:id="@+id/security_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondColor"
+        android:padding="30dp"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:fontFamily="@font/antic"
+        android:text="@string/security_is_our_main_concern_in_digital_transaction_now_you_can_pay_me_through_any_medium_you_want"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/security_pay" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

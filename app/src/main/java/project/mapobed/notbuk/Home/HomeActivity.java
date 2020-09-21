@@ -24,6 +24,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import project.mapobed.notbuk.Home.Fragment.About.AboutDeveloperFragment;
 import project.mapobed.notbuk.Home.Fragment.Cloud.CloudFragment;
 import project.mapobed.notbuk.Home.Fragment.Help.HelpFragment;
+import project.mapobed.notbuk.Home.Fragment.HelpMe.HelpMeActivity;
 import project.mapobed.notbuk.Home.Fragment.Notes.NotesFragment;
 import project.mapobed.notbuk.Home.Fragment.Settings.SettingsFragment;
 import project.mapobed.notbuk.R;
@@ -144,6 +145,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(Intent.createChooser(email, "Choose an Email client :"));
                 break;
             case R.id.pay_me:
+                startActivity(new Intent(HomeActivity.this, HelpMeActivity.class));
                 break;
             case R.id.exit:
                 System.exit(0);

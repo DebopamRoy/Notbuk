@@ -55,4 +55,9 @@
     <string name="upload">Upload</string>
     <string name="rename">Rename</string>
     <string name="edit">Edit</string>
+    <string name="we_are_always_in_need_of_money_can_you_help_me_with_some">We are always in need of money. Can you help me with some?</string>
+    <string name="enter_the_amount">Enter the amount</string>
+    <string name="donate">Donate</string>
+    <string name="security_is_our_main_concern_in_digital_transaction_now_you_can_pay_me_through_any_medium_you_want">Security is our main concern in digital transaction. Now you can pay me through any medium you want.</string>
+    <string name="payment_failed">Transaction Failed</string>
 </resources>
