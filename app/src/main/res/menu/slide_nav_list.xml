@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/home">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/notes"
+                    android:icon="@drawable/ic_notes"
+                    android:title="@string/notes" />
+                <item android:id="@+id/cloud"
+                    android:title="@string/cloud_stotage"
+                    android:icon="@drawable/ic_sync"/>
+                <item
+                    android:id="@+id/settings"
+                    android:icon="@drawable/ic_settings"
+                    android:title="@string/settings" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/share">
+        <menu>
+            <item
+                android:id="@+id/share_app"
+                android:icon="@drawable/ic_share"
+                android:title="@string/share_this_app" />
+            <item
+                android:id="@+id/rate_us"
+                android:icon="@drawable/ic_review"
+                android:title="@string/rate_us" />
+        </menu>
+    </item>
+    <item android:title="@string/about">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/help"
+                    android:icon="@drawable/ic_about"
+                    android:title="@string/help" />
+                <item
+                    android:id="@+id/about_developer"
+                    android:icon="@drawable/ic_about_developer"
+                    android:title="@string/about_developer" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/support">
+        <menu>
+            <item
+                android:icon="@drawable/ic_suggets"
+                android:id="@+id/suggest"
+                android:title="@string/suggest_something" />
+            <item
+                android:id="@+id/pay_me"
+                android:icon="@drawable/ic_money"
+                android:title="@string/help_me" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/exit"
+        android:icon="@drawable/ic_exit"
+        android:title="Exit" />
+
+</menu>

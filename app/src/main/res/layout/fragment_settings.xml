@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Home.Fragment.Settings.SettingsFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_account"
+        app:layout_constraintBottom_toTopOf="@+id/name_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_background"
+        android:drawableLeft="@drawable/ic_outline_account_circle_24"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/exo_medium"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:text="Debopam Roy"
+        android:textColor="@color/secondColor"
+        app:layout_constraintBottom_toTopOf="@+id/email_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/email_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_background"
+        android:drawableLeft="@drawable/ic_outline_email_24"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/exo_medium"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:text="debo.roy79@gmail.com"
+        android:textColor="@color/secondColor"
+        app:layout_constraintBottom_toTopOf="@+id/password_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_settings" />
+
+    <TextView
+        android:id="@+id/password_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_background"
+        android:drawableLeft="@drawable/ic_outline_lock_24"
+        android:drawableRight="@drawable/ic_twotone_edit_24"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/exo_medium"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:text="********"
+        android:textColor="@color/secondColor"
+        app:layout_constraintBottom_toTopOf="@+id/logout_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_settings" />
+
+    <Button
+        android:id="@+id/logout_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:textAllCaps="false"
+        android:fontFamily="@font/exo_medium"
+        android:background="@drawable/get_started_background"
+        android:textColor="@color/secondColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_settings" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

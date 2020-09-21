@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "387367382208",
+    "firebase_url": "https://notbuk-mapobed.firebaseio.com",
+    "project_id": "notbuk-mapobed",
+    "storage_bucket": "notbuk-mapobed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387367382208:android:5fc75592f2e22d05805125",
+        "android_client_info": {
+          "package_name": "project.mapobed.notbuk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "387367382208-vftj83rgakkfemu87f173qjg6e5gf5nj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "project.mapobed.notbuk",
+            "certificate_hash": "6e02ca011ae69f736057a5a1c2d7f89e23e59ae7"
+          }
+        },
+        {
+          "client_id": "387367382208-k68ms8a9lp2seo2dg1uc56m365l5kcj1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZFpuQZf13smmHj4bCIcQyefGLDbxU8ao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "387367382208-k68ms8a9lp2seo2dg1uc56m365l5kcj1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

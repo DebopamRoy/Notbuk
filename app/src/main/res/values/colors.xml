@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#84A1AF</color>
+    <color name="colorPrimary">#BB9BCA</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="firstColor">#FFFFFF</color>
+    <color name="errorColor">#FF0000</color>
+    <color name="secondColor">#000000</color>
+    <color name="splashScreenColor">#84A1AF</color>
+    <color name="header_background">#E3E3E3</color>
+    <color name="cardColor">#FFFFFF</color>
+    <color name="item_selector_color">#84A1AF</color>
+    <color name="card_title_color">#E6E6E6</color>
+</resources>
