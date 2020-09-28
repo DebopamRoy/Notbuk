@@ -60,10 +60,6 @@
     <string name="donate">Donate</string>
     <string name="security_is_our_main_concern_in_digital_transaction_now_you_can_pay_me_through_any_medium_you_want">Security is our main concern in digital transaction. Now you can pay me through any medium you want.</string>
     <string name="amount">Please select an amount between 10 &amp; 8000.</string>
-    <string name="phone_pay">Phone Pay is not installed in your device. Try something else</string>
-    <string name="paytm">Paytm is not installed in your device. Try something else</string>
-    <string name="google_pay">GPay is not installed in your device. Try something else</string>
-    <string name="payment_failed">Transaction Failed</string>
-    <string name="thank_you">Your support made my day. Thank You.</string>
-    <string name="support_for_app">Support for Application</string>
+    <string name="note_content_here">Note Content Here</string>
+    <string name="note_title_here">Note Title Here</string>
 </resources>

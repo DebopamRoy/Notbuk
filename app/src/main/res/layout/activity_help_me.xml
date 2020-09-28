@@ -79,30 +79,59 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         app:boxStrokeColor="@color/secondColor"
         app:errorTextColor="@color/errorColor"
         app:hintTextColor="@color/secondColor"
-
-        app:layout_constraintBottom_toTopOf="@+id/pay_me_button"
+        app:layout_constraintBottom_toTopOf="@+id/message_paid"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/card_image">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:drawablePadding="10dp"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_rupee"
+            android:drawablePadding="10dp"
             android:hint="@string/enter_the_amount"
             android:inputType="number"
             android:textColor="@color/secondColor" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/message_paid"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:boxStrokeColor="@color/secondColor"
+        app:errorTextColor="@color/errorColor"
+        app:hintTextColor="@color/secondColor"
+        app:layout_constraintBottom_toTopOf="@+id/pay_me_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount_paid">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/suggest_something"
+            android:inputType="number"
+            android:textColor="@color/secondColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
     <Button
         android:id="@+id/pay_me_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:background="@drawable/get_started_background"
         android:fontFamily="@font/exo_medium"
         android:padding="10dp"
@@ -112,7 +141,7 @@
         app:layout_constraintBottom_toTopOf="@+id/security_pay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/amount_paid" />
+        app:layout_constraintTop_toBottomOf="@+id/message_paid" />
 
     <ImageButton
         android:id="@+id/security_pay"

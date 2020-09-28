@@ -2,12 +2,14 @@ package project.mapobed.notbuk.Home.Fragment.Notes;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
@@ -17,13 +19,17 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import project.mapobed.notbuk.Home.Fragment.Notes.NoteDetails.NotesDetailsActivity;
 import project.mapobed.notbuk.R;
 
 public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesHolder> {
     private List<String> title_list;
     private List<String> content_list;
+    private List<String> title_list_one;
+    private List<String> content_list_one;
     private NoteClicked noteClicked;
     private Context context;
 
@@ -32,6 +38,8 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesHolder>
         this.content_list = content_list;
         this.noteClicked = noteClicked;
         this.context = context;
+        title_list_one=new ArrayList<>(title_list);
+        content_list_one=new ArrayList<>(content_list);
     }
 
     @NonNull
@@ -46,7 +54,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesHolder>
         holder.title.setText(content_list.get(position));
         holder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(final View v) {
                 PopupMenu popup = new PopupMenu(context, v);
                 popup.inflate(R.menu.menu_more);
                 popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
@@ -54,12 +62,19 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesHolder>
                     public boolean onMenuItemClick(MenuItem item) {
                         switch (item.getItemId()) {
                             case R.id.edit_more:
+                                v.getContext().startActivity(new Intent(context, NotesDetailsActivity.class)
+                                        .putExtra("noteTitle",content_list.get(position)).
+                                        putExtra("noteContent",title_list.get(position)));
                                 //handle menu1 click
                                 return true;
                             case R.id.rename_more:
                                 //handle menu2 click
                                 return true;
                             case R.id.delete_more:
+                                title_list.remove(position);
+                                content_list.remove(position);
+                                notifyItemRemoved(position);
+                                notifyItemRangeChanged(position, content_list.size());
                                 //handle menu3 click
                                 return true;
                             case R.id.upload_more:

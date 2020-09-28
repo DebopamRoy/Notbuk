@@ -8,14 +8,17 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
-import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
@@ -31,7 +34,7 @@ import project.mapobed.notbuk.R;
 import project.mapobed.notbuk.Register.RegisterActivity;
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-    private ImageView menu, search, logout;
+    private ImageView menu, logout;
     private NavigationView navigationView;
     private FrameLayout frameLayout;
     private DrawerLayout drawerLayout;
@@ -45,7 +48,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_home);
 
         menu = (ImageView) findViewById(R.id.home_menu);
-        search = (ImageView) findViewById(R.id.hpme_search);
         frameLayout = (FrameLayout) findViewById(R.id.fame_layout_home);
         drawerLayout = (DrawerLayout) findViewById(R.id.home_drawer);
         navigationView = (NavigationView) findViewById(R.id.home_nav);
@@ -84,6 +86,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 }
             }
         });
+
+
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fame_layout_home, new NotesFragment()).commit();
 
