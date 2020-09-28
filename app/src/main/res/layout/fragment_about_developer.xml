@@ -1,14 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".Home.Fragment.About.AboutDeveloperFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:src="@drawable/debopam_roy"
+        app:layout_constraintBottom_toTopOf="@+id/developer_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/developer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/exo_medium"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="@string/name_debopam_roy"
+        android:textColor="@color/secondColor"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/developer_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/developer_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/exo_medium"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="@string/email_debo_roy79_gmail_com"
+        android:textColor="@color/secondColor"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/developer_college"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/developer_name" />
+
+    <TextView
+        android:id="@+id/developer_college"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/exo_medium"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="@string/college_university_of_calcutta"
+        android:textColor="@color/secondColor"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/developer_email" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/if_you_want_me_to_help_you_out_with_application_feel_free_to_contact_me_through_my_email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:fontFamily="@font/antic"
+        android:textColor="@color/splashScreenColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/developer_college" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

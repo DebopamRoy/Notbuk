@@ -47,7 +47,6 @@
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="cloud_stotage">Sync Notes</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="welcome">Welcome</string>
     <string name="sign_in">Sign In</string>
     <string name="logout">Logout</string>
@@ -60,4 +59,21 @@
     <string name="donate">Donate</string>
     <string name="security_is_our_main_concern_in_digital_transaction_now_you_can_pay_me_through_any_medium_you_want">Security is our main concern in digital transaction. Now you can pay me through any medium you want.</string>
     <string name="amount">Please select an amount between 10 &amp; 8000.</string>
+    <string name="note_content_here">Note Content Here</string>
+    <string name="note_title_here">Note Title Here</string>
+    <string name="help_note_one">-->  If you want to add a new note then click on [img src=ic_baseline_add_24/] button in Notes screen.</string>
+    <string name="help_note_two">-->  After completing the note, do not forget to save the document by clicking [img src=ic_baseline_check_24/] button.</string>
+    <string name="help_note_three">-->  If you do not want to save the document click on [img src=ic_baseline_arrow_back_ios_24/] button. Then click on the CANCEL button.</string>
+    <string name="help_note_four">--> Click on [img src=ic_more/] button on your Notes screen to Edit, Rename, Upload &amp; Delete.</string>
+    <string name="help_title">Hey there, welcome to Notbuk. Debopam Roy, developer of this application at your service. This application will help you to write notes &amp; save them.</string>
+    <string name="help_note">->  Click on Notes  to customise as well as add new notes in Notes Screen.</string>
+    <string name="help_sync">->  Click on Sync Notes to download all the notes from cloud storage to your device.</string>
+    <string name="help_sync_one">-->  This feature will be only available if you are logged into your account.</string>
+    <string name="help_settings">->  Click on Settings to customise features of the application.</string>
+    <string name="help_rate">->  Click on Rate Us to rate the application in Google Play Store.</string>
+    <string name="help_share">->  Click on Share this App to share this application with your contact.</string>
+    <string name="help_about">->  Click on About Developer to know about the developer who gave their effort to build this application.</string>
+    <string name="help_suggest">->  Click on Suggest something to help us with your valuable Ideas. We are excited to read your Ideas.</string>
+    <string name="help_dev">->  Click on Help Me to help us financially, so that we can bring up more ideas like this.</string>
+    <string name="help_exit">->  Click on Exit to exit the application &amp; return back to your ghome screen.</string>
 </resources>

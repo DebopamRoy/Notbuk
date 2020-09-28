@@ -1,14 +1,254 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home.Fragment.Help.HelpFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <project.mapobed.notbuk.TextViewWithImages
+            android:id="@+id/help_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_medium"
+            android:padding="10dp"
+            android:text="@string/help_title"
+            android:textColor="@color/secondColor"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/help_one"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <project.mapobed.notbuk.TextViewWithImages
+            android:id="@+id/help_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_medium"
+            android:padding="10dp"
+            android:text="@string/help_note"
+            android:textColor="@color/secondColor"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/help_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/help_title" />
+
+        <project.mapobed.notbuk.TextViewWithImages
+            android:id="@+id/help_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/antic"
+            android:padding="10dp"
+            android:text="@string/help_note_one"
+            android:textColor="@color/secondColor"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/help_three"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/help_one" />
+
+        <project.mapobed.notbuk.TextViewWithImages
+            android:id="@+id/help_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/antic"
+            android:padding="10dp"
+            android:text="@string/help_note_two"
+            android:textColor="@color/secondColor"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/help_four"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/help_two" />
+
+        <project.mapobed.notbuk.TextViewWithImages
+            android:id="@+id/help_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/antic"
+            android:padding="10dp"
+            android:text="@string/help_note_three"
+            android:textColor="@color/secondColor"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/help_five"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/help_three" />
+
+        <project.mapobed.notbuk.TextViewWithImages
+            android:id="@+id/help_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/antic"
+            android:padding="10dp"
+            android:text="@string/help_note_four"
+            android:textColor="@color/secondColor"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/help_six"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/help_four" />
+
+        <project.mapobed.notbuk.TextViewWithImages
+            android:id="@+id/help_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_medium"
+            android:padding="10dp"
+            android:text="@string/help_sync"
+            android:textColor="@color/secondColor"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/help_seven"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/help_five" />
+
+        <project.mapobed.notbuk.TextViewWithImages
+            android:id="@+id/help_seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/antic"
+            android:padding="10dp"
+            android:text="@string/help_sync_one"
+            android:textColor="@color/secondColor"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toTopOf="@id/help_eight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/help_six" />
+
+        <project.mapobed.notbuk.TextViewWithImages
+            android:id="@+id/help_eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_medium"
+            android:padding="10dp"
+            android:text="@string/help_settings"
+            android:textColor="@color/secondColor"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/help_nine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/help_seven" />
+
+        <project.mapobed.notbuk.TextViewWithImages
+            android:id="@+id/help_nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_medium"
+            android:padding="10dp"
+            android:text="@string/help_share"
+            android:textColor="@color/secondColor"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/help_ten"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/help_eight" />
+
+        <project.mapobed.notbuk.TextViewWithImages
+            android:id="@+id/help_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_medium"
+            android:padding="10dp"
+            android:text="@string/help_rate"
+            android:textColor="@color/secondColor"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/help_eleven"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/help_nine" />
+
+        <project.mapobed.notbuk.TextViewWithImages
+            android:id="@+id/help_eleven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_medium"
+            android:padding="10dp"
+            android:text="@string/help_about"
+            android:textColor="@color/secondColor"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/help_twelve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/help_ten" />
+
+        <project.mapobed.notbuk.TextViewWithImages
+            android:id="@+id/help_twelve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_medium"
+            android:padding="10dp"
+            android:text="@string/help_suggest"
+            android:textColor="@color/secondColor"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/help_thirteen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/help_eleven" />
+
+        <project.mapobed.notbuk.TextViewWithImages
+            android:id="@+id/help_thirteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_medium"
+            android:padding="10dp"
+            android:text="@string/help_dev"
+            android:textColor="@color/secondColor"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/help_fourteen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/help_twelve" />
+
+        <project.mapobed.notbuk.TextViewWithImages
+            android:id="@+id/help_fourteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_medium"
+            android:padding="10dp"
+            android:text="@string/help_dev"
+            android:textColor="@color/secondColor"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/help_fifteen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/help_thirteen" />
+
+        <project.mapobed.notbuk.TextViewWithImages
+            android:id="@+id/help_fifteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_medium"
+            android:padding="10dp"
+            android:text="@string/help_exit"
+            android:textColor="@color/secondColor"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/animationView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/help_fourteen" />
+
+
+
+           <com.airbnb.lottie.LottieAnimationView
+               android:id="@+id/animationView"
+               android:layout_width="0dp"
+               android:layout_height="150dp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/help_fifteen"
+               app:lottie_autoPlay="true"
+               app:lottie_loop="true"
+               app:lottie_rawRes="@raw/help" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

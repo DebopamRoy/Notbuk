@@ -40,7 +40,7 @@ public class NotesDetailsActivity extends AppCompatActivity {
                 if (saved)
                     finish();
                 else {
-                    if (title.getText().toString().trim().length() >0 && content.getText().toString().trim().length() >0) {
+                    if (title.getText().toString().trim().length() > 0 || content.getText().toString().trim().length() > 0) {
 
                         AlertDialog.Builder dialog = new AlertDialog.Builder(NotesDetailsActivity.this);
                         dialog.setTitle("Alert!");
@@ -61,8 +61,7 @@ public class NotesDetailsActivity extends AppCompatActivity {
                         dialog.setCancelable(false);
                         dialog.show();
 
-                    }
-                    else
+                    } else
                         finish();
                 }
             }
